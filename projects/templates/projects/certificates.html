@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.112.5">
+        <title>Karl Ulrich Olivarez</title>
+
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+        <link rel="stylesheet", type="text/css" href="{% static 'custom.css' %}">
+
+    </head>
+
+    <body>
+        <main>
+
+            <section class="py-5 text-center header-bg">
+                <div class="row py-lg-3 header-dim">
+
+                    <div class="col-lg-6 col-md-11 mx-auto head-content">
+                        <h2 class="fw-medium" style="color: #a1a0ae">I'm</h2>
+                        <h1 class="fw-bold name-text">Karl Ulrich Olivarez</h1>
+                        <p class="lead text-body-secondary">
+                            An aspiring software developer equipped with skills and knowledge
+                            from six years of studying and building a variety of projects.
+                            Experienced in creating web, desktop, and mobile applications,
+                            I am commited to developing and exploring digital solutions that will help 
+                            us achieve a better quality of life.
+                        </p>
+                        <a href="https://github.com/OlivarezK" target="_blank" rel="noopener noreferrer" style="color: transparent">
+                            <button class="github-btn"></button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/karl-ulrich-olivarez-650530267/" target="_blank" rel="noopener noreferrer" style="color: transparent">
+                            <button class="linkedin-btn"></button>
+                        </a>
+                        <br>
+                        <img src="{% static 'img/Gmail-logo.png' %}" height="30px"></img>
+                        <label class="lead text-body-secondary email-text">kuolivarez@gmail.com</label>
+                    </div>
+
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <img src="{% static 'img/karl.png' %}" height=300 class="profile"></img>
+                    </div>
+
+                </div>
+                <divc lass="row py-lg-5 header-dim">
+                    <div class="col-lg-12 col-md-8 mx-auto nav-bar">
+                        <a href="{% url 'home' %}" class="nav nav-inactive" style="margin-right: 100px">Projects</a>
+                        <a href="{% url 'certificates' %}" class="nav nav-active" style="margin-left: 100px">Certificates</a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="album py-5 body-content">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3"> 
+                        <!-- certificate cards -->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="card-img-top" src="{% static 'img/Certs/Fullstack.png' %}"></img>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="card-img-top" src="{% static 'img/Certs/REST_API.png' %}"></img>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="card-img-top" src="{% static 'img/Certs/Django.png' %}"></img>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="card-img-top" src="{% static 'img/Certs/Advance_Django.png' %}"></img>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="card-img-top" src="{% static 'img/Certs/Python_Beginner.jpg' %}"></img>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="card-img-top" src="{% static 'img/Certs/Python_Intermediate.jpg' %}"></img>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="card-img-top" src="{% static 'img/Certs/Improve_UX.png' %}"></img>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="card-img-top" src="{% static 'img/Certs/Advance_UX.png' %}"></img>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="card-img-top" src="{% static 'img/Certs/iCheck.png' %}"></img>
+                            </div>
+                        </div>
+                        <!-- certificate cards end -->
+                    
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        <script src="{% static 'jquery-3.7.0.min.js' %}"></script>
+        <script src="{% static 'popper.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    </body>
+</html>
